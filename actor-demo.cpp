@@ -15,8 +15,8 @@ int main() {
     auto pw = actor.makeType("PrintWord");
     auto av = actor.makeType("AddValues");
     
-    queue.emplace_back(new PrintWord("foo"));
-    queue.emplace_back(new AddValues(3, 8));
+    // queue.emplace_back(new PrintWord("foo"));
+    // queue.emplace_back(new AddValues(3, 8));
     queue.emplace_back(pw.release());
     queue.emplace_back(av.release());
 
