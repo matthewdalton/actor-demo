@@ -23,7 +23,8 @@ int main() {
     while (!queue.empty()) {
         std::unique_ptr<Instruction> i = std::move(queue.front());
         queue.pop_front();
-        i->doWork();
+        std::cout << i->name() << std::endl;
+        // i->doWork();
     }
 
     return 0;

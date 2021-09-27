@@ -4,9 +4,18 @@
 #include <iostream>
 
 class Instruction {
+private:
+    std::string _name;
+
 public:
     virtual ~Instruction() {}
     virtual void doWork() const = 0;
+    void setName(const std::string &name) {
+        _name = name;
+    }
+    std::string name() {
+        return _name;
+    }
 };
 
 class PrintWord : public Instruction {
