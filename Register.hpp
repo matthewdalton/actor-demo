@@ -1,5 +1,7 @@
 // -*- mode: c++; c-file-style: "stroustrup" -*-
 
+#pragma once
+
 #include <memory>
 
 #include "Instruction.hpp"
